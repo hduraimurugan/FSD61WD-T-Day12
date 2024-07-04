@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    /* background:
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#0011ff 68% 70%,#0000 72%) 10px 10px/calc(2*10px) calc(2*10px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#0011ff 68% 70%,#0000 72%) 10px 10px/calc(2*10px) calc(2*10px),
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#0011ff 68% 70%,#0000 72%) 0 0/calc(2*10px) calc(2*10px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#0011ff 68% 70%,#0000 72%) 0 0/calc(2*10px) calc(2*10px),
+      repeating-conic-gradient(#00dcff 0 25%,#0000 0 50%) 0 0/calc(2*10px) calc(2*10px),
+      radial-gradient(#0000 66%,#0011ff 68% 70%,#0000 72%) 0 calc(10px/2)/10px 10px
+      #00dcff; */
+    background-color: aliceblue;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 15%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+    padding: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.blink {
+    color: red;
+    text-align: center;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+nav h1:hover{
+    color: brown;
+    cursor: pointer;
+}
+h1,
+ul,
+li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul {
+    margin-left: 60%;
+    justify-content: center;
+}
+
+li {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+li:hover {
+    color: brown;
+}
+
+input {
+    width: 60%;
+    padding: 15px;
+    /* border-color: turquoise; */
+    border-radius: 20px;
+    border-width: 0px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+}
+
+.searchbar {
+    padding: 50px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0% 0 10%;
+}
+
+.box1 {
+    display: inline-block;
+    border-color: black;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 20px;
+    width: 220px;
+    background-color: aliceblue;
+    cursor: pointer;
+    padding: 10px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.16);
+}
+
+.box1 img {
+    border-radius: 20px 20px 0 0;
+
+}
+
+.box1:hover {
+    background-color: rgb(247, 247, 243);
+    color: rgb(0, 4, 255);
+    transform: scale(0.90);
+}
+
+.products {
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+.products box1 p {
+    padding: 50%;
+}
+
+.about {
+    margin-top: 0px;
+    text-align: center;
+    padding: 200px;
+    color: rgb(0, 14, 95);
+    stroke: black;
+    text-shadow: black;
+}
+
+.about:hover {
+    color: rgb(0, 14, 95);
+    stroke: black;
+    text-shadow: black;
+    transform: scale(1.10);
+}
+
+.contact {
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 15%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 100%);
+    color: blanchedalmond;
+    padding: 20px;
+}
+.contact:hover{
+    color: white;
+}
+
+.contact2 {
+    margin-top: 20px;
+    padding: 20px;
+    color: aliceblue;
+}
